@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 body {
-  background: url(../img/bg.png) fixed;
+  background: url(../img/fundo-1200.jpg) fixed;
   color: black;
   font-family: 'Hind', sans-serif;
   font-size: 15px;
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2b2d3d;
+  color: #0e0f1a;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -25,8 +25,8 @@ h1 {
 }
 
 h2 {
-  color: #bebece;
-  font-size: 20px;
+  color: #03033d;
+  font-size: 25px;
 }
 
 h3 {
@@ -58,15 +58,15 @@ p {
 div button {
   float: right;
   margin-top: 6px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #120777;
+  color: rgb(226, 210, 210);
   border: none;
   padding:10px 10px 10px 10px;
   border-radius: 10%;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgba(255, 255, 255, 0.603);
   display: flex;
   max-width: 1300px;
   margin: 20px auto;
@@ -93,26 +93,28 @@ section {
   padding: 4rem;
 }
 
-.my-skills article div progress {
-  height: 25px;
+.my-skills article div progress {  
+  height: 30px;
   min-width: 100%;
+
 }
+
 
 .container,
 aside,
 section {
-  box-shadow: 0 0 0 1px #eaeaea;
+  box-shadow: 0 0 0 1px #f1e9e9;
 }
 
 input:focus{
-  border-color: #86b7fe;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  border-color: #120777;
+  box-shadow: 0 0 0 0.25rem rgb(13, 109, 253, 0.795);
   outline: 0;
 }
 
 textarea:focus{
-  border-color: #86b7fe;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  border-color: #120777;
+  box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0.795);
   outline: 0;
 }
 
@@ -132,12 +134,47 @@ textarea {
   border-radius: 5px;
 }
 
+@media (max-width: 1000px){
+  .container {
+    background-color: rgba(255, 255, 255, 0.705);
+    /*display: block;*/
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  aside header img {
+    max-width: 70%;    
+    margin-left: 25%;    
+  }
+
+  .expertise article {
+    display: block;
+    column-gap: 3rem;
+  }
+
+  textarea {
+    margin-top: 5px;
+    border-color: rgba(56, 54, 54, 0.128);
+    border-width: 1.8px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+}
+
+
 /* tela com no maximo 600px --------------*/
 @media (max-width: 600px){
+  body {
+    background: url(../img/fundo-500.jpg) fixed;
+    color: black;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+  }
   .container {
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(255, 255, 255, 0.705);
     display: block;
-    max-width: 600px;
+    max-width: 400px;
     margin: 20px auto;
   }
 
@@ -160,6 +197,13 @@ textarea {
     display: block;
     justify-content: space-between;
   
+  }
+  input {
+    border-color: rgba(56, 54, 54, 0.128);
+    border-width: 1.8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
   }
 
   textarea {
