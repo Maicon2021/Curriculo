@@ -134,39 +134,9 @@ textarea {
   border-radius: 5px;
 }
 
-@media (max-width: 1000px){
-  .container {
-    background-color: rgba(255, 255, 255, 0.705);
-    /*display: block;*/
-    max-width: 900px;
-    margin: 20px auto;
-  }
-  
-  aside header img {
-    max-width: 70%;    
-    margin-left: 25%;    
-  }
-
-  .expertise article {
-    display: block;
-    column-gap: 3rem;
-  }
-
-  textarea {
-    margin-top: 5px;
-    border-color: rgba(56, 54, 54, 0.128);
-    border-width: 1.8px;
-    border-radius: 5px;
-    width: 100%;
-  }
-
-}
-
-
 /* tela com no maximo 600px --------------*/
 @media (max-width: 600px){
-  body {
-    background: url(../img/fundo-500.jpg) fixed;
+  body {    
     color: black;
     font-family: 'Hind', sans-serif;
     font-size: 15px;
@@ -174,8 +144,16 @@ textarea {
   .container {
     background-color: rgba(255, 255, 255, 0.705);
     display: block;
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  main {
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 1.5rem;
+  }
+  section {
+    padding: 1rem;
   }
 
   aside header img {
@@ -213,4 +191,45 @@ textarea {
     border-radius: 5px;
     width: 100%;
   }
+  div button {
+    float: right;
+    margin-top: 3px;    
+    background-color: #120777;
+    color: rgb(226, 210, 210);
+    border: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+  }
 } 
+
+@media (max-width: 1000px){
+  .container {
+    background-color: rgba(255, 255, 255, 0.705);
+    /*display: block;*/
+    max-width: 900px;
+    margin: 10px auto;
+  }
+  
+  aside header img {
+    max-width: 70%;    
+    margin-left: 25%;    
+  }
+  section {
+    padding: 1rem;
+  }
+  .expertise article {
+    display: block;
+    column-gap: 1rem;
+  }
+
+  textarea {
+    margin-top: 5px;
+    border-color: rgba(56, 54, 54, 0.128);
+    border-width: 1.8px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+}
+
+
