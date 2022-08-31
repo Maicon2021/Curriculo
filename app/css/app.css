@@ -141,24 +141,22 @@ textarea {
     font-family: 'Hind', sans-serif;
     font-size: 15px;
   }
+
   .container {
     background-color: rgba(255, 255, 255, 0.705);
     display: block;
-    max-width: 300px;
+    max-width: 600px;
     margin: 10px auto;
   }
-  main {
-    flex-grow: 2;
-    flex-basis: 0;
-    padding: 1.5rem;
-  }
+ 
   section {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   aside header img {
-    max-width: 50%;    
-    margin-left: 25%;    
+    display: block;
+    max-width: 50%;
+    padding-bottom: 3rem;
   }
 
   .expertise article {
@@ -211,9 +209,10 @@ textarea {
   }
   
   aside header img {
-    max-width: 70%;    
-    margin-left: 25%;    
+    max-width: 100%;
+    padding-bottom: 3rem;
   }
+
   section {
     padding: 1rem;
   }
