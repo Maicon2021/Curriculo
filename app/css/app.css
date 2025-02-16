@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 body {
-  background: url(../img/fundo-1200.jpg) fixed;
+  background: url(../img/imagemFundo.png) fixed;
   color: black;
   
   font-family: 'Hind', sans-serif;
@@ -9,6 +9,10 @@ body {
 }
 body article {
   min-width: 290px;
+  padding: 1rem; /* Espaçamento interno */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 8px; /* Bordas arredondadas */
+
 }
 
 h1,
@@ -45,9 +49,13 @@ p {
   text-align: justify;
 }
 
+
+
 .expertise article {
-  display: flex;
-  column-gap: 3rem;
+  flex: 1; /* Artigos se expandem igualmente */
+  /*min-width: 200px; /* Largura mínima */ 
+  
+ 
 }
 
 .artic-nomes{
@@ -71,9 +79,8 @@ div button {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.603);
-  display: flex;
-  
+  background-color: rgba(137, 150, 155, 0.904);
+  display: flex;  
   max-width: 1300px;
   margin: 20px auto;
 }
@@ -96,7 +103,7 @@ main {
 }
 
 section {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .my-skills article div progress {  
@@ -104,6 +111,7 @@ section {
   min-width: 100%;
 
 }
+
 
 
 .container,
@@ -151,7 +159,7 @@ textarea {
   }
 
   .container {
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(137, 150, 155, 0.904);
     display: block;
     max-width: 380px;
     margin: 10px auto;
@@ -213,7 +221,7 @@ textarea {
 /* tela com no maximo 590px --------------*/
 @media (max-width: 1000px){
   .container {
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(137, 150, 155, 0.904);
     display: block;
     max-width: 900px;
     margin: 10px auto;
