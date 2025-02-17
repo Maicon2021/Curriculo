@@ -79,7 +79,7 @@ div button {
 }
 
 .container {
-  background-color: rgba(137, 150, 155, 0.904);
+  background-color: rgba(137, 150, 155, 0.952);
   display: flex;  
   max-width: 1300px;
   margin: 20px auto;
@@ -159,7 +159,7 @@ textarea {
   }
 
   .container {
-    background-color: rgba(137, 150, 155, 0.904);
+    background-color: rgba(137, 150, 155, 0.952);
     display: block;
     max-width: 380px;
     margin: 10px auto;
@@ -221,7 +221,7 @@ textarea {
 /* tela com no maximo 590px --------------*/
 @media (max-width: 1000px){
   .container {
-    background-color: rgba(137, 150, 155, 0.904);
+    background-color: rgba(137, 150, 155, 0.952);
     display: block;
     max-width: 900px;
     margin: 10px auto;
